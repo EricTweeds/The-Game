@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#000000</color>
     <color name="TextColour">#000000</color>
-    <color name="ButtonColor">#FFFFFF</color>
+    <color name="ButtonColor">#A0A0A0</color>
+    <color name="pressed">#C0C0C0</color>
 </resources>

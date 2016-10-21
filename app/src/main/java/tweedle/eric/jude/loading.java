@@ -3,8 +3,10 @@ package tweedle.eric.jude;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.annotation.UiThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -13,6 +15,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import static android.view.View.VISIBLE;
 
 public class loading extends AppCompatActivity {
     /**
@@ -30,6 +34,7 @@ public class loading extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
     /**

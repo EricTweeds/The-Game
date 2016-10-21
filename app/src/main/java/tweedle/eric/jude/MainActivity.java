@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.appindexing.Action;
@@ -12,6 +14,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import static android.R.attr.button;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +35,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void advance(View view) {
+        Long initial = System.currentTimeMillis();
+        waiting(initial);
+    }
+    public void waiting(Long initial) {
+
+        Log.d("Waiting", "we are here");
+        double waitTime = Math.random() * 3000;
+        String wTime = Double.toString(waitTime);
+        Log.d("Waiting", wTime);
+        while (((System.currentTimeMillis()) - initial) < waitTime) {
+        }
         Intent intent = new Intent(this, finalActivity.class);
         startActivity(intent);
     }

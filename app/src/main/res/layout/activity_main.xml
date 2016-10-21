@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="tweedle.eric.jude.MainActivity">
+    tools:context="tweedle.eric.jude.MainActivity"
+    android:background="@drawable/background">
 
     <Button
         android:layout_width="wrap_content"
@@ -20,8 +21,8 @@
         android:textAlignment="center"
         android:gravity="center"
         android:layout_alignParentTop="true"
-
+        android:id = "@+id/button"
         android:textColor="@color/TextColour"
         android:backgroundTint="@color/ButtonColor"
-        android:onClick="advance"/>
+        android:onClick="advance" />
 </RelativeLayout>
