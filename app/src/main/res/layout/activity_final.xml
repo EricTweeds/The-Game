@@ -9,14 +9,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="tweedle.eric.jude.finalActivity">
+    tools:context="tweedle.eric.jude.finalActivity"
+    android:background="@drawable/clown">
 
     <Button
-        android:text="Button"
+        android:text="Go Back"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
         android:id="@+id/button2"
-        android:onClick="Return"/>
+        android:onClick="Return"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
