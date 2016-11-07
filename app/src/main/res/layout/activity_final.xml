@@ -12,10 +12,11 @@
     tools:context="tweedle.eric.jude.finalActivity"
     android:background="@drawable/clown">
 
-    <Button
-        android:text="Go Back"
+
+    <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
         android:id="@+id/button2"
         android:onClick="Return"
         android:layout_alignParentBottom="true"
